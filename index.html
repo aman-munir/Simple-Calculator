@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<style type="text/css">  
+body{
+    background-color: rgb(78, 77, 77);
+}    
+div{
+    display: flex;
+    padding-top: 12px;
+    justify-content: center;
+    margin-left: 620px;
+    margin-right: 613px;
+    border: 1px solid rgba(20, 20, 20, 0.918);
+    padding-bottom: 12px;
+    background-color: rgba(20, 20, 20, 0.918);
+}
+.screen{
+    margin-left: 40.25%; 
+    height: 65px;
+    width: 275px;
+    border: 2px solid white;
+    margin-top: 150px;
+    background-color: lightgrey;
+    border: 10px solid rgba(20, 20, 20, 0.918);
+    padding-bottom: 12px;
+    border-top-left-radius: 13px;
+    border-top-right-radius:13px ;
+}
+.btn1{
+    color: white;
+    font-size: 28px;
+    height: 50px;
+    width: 85px;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+}
+.btn2{
+    color: white;
+    font-size: 28px;
+    height: 50px;
+    width: 175px;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+}
+.btn3{
+    color: white;
+    font-size: 28px;
+    height: 50px;
+    width: 175px;
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 5px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(14, 101, 183);
+}
+.row1{
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+}
+    </style>
+    <h1>SIMPLE CALCULATOR</h1>
+    <div class="screen"></div>
+    <div class="row" >
+        <button class="btn1" onclick="getValue('7')" style="background-color: rgb(87, 87, 87);">7</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('8')" style="background-color: rgb(87, 87, 87);">8</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('9')" style="background-color: rgb(87, 87, 87);">9</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('C')" style="background-color: red">C</button>&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="row" >
+        <button class="btn1" onclick="getValue('4')" style="background-color: rgb(87, 87, 87);">4</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('5')" style="background-color: rgb(87, 87, 87);">5</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1"onclick="getValue('6')" style="background-color: rgb(87, 87, 87);">6</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('/')" style="background-color: rgb(87, 87, 87);color: orange;">/</button>&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="row" >
+        <button class="btn1" onclick="getValue('1')" style="background-color: rgb(87, 87, 87);">1</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('2')" style="background-color: rgb(87, 87, 87);">2</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('3')" style="background-color: rgb(87, 87, 87);">3</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('*')" style="background-color: rgb(87, 87, 87);color: orange;">*</button>&nbsp;&nbsp;&nbsp;
+    </div>
+    <div class="row" >
+        <button class="btn2" onclick="getValue('0')" style="background-color: rgb(87, 87, 87);">0</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('.')" style="background-color: rgb(87, 87, 87)">.</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn1" onclick="getValue('-')" style="background-color: rgb(87, 87, 87);color: orange;">-</button>&nbsp;&nbsp;&nbsp;
+    </div>
+<div class="row1">
+    <button class="btn3"onclick="getValue('=')" style="background-color:blue ;">=</button>&nbsp;&nbsp;&nbsp;
+    <button class="btn1" onclick="getValue('Del')" style="background-color: red;">Del</button>&nbsp;&nbsp;&nbsp;
+    <button class="btn1"onclick="getValue('+')" style="background-color:rgb(87, 87, 87);color: orange;">+</button>&nbsp;&nbsp;&nbsp;
+</div>
+    <script src="app.js"></script> 
+</body>
+</html>
